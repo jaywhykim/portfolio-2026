@@ -17,6 +17,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
+
 }
 
 /* =========================
@@ -84,6 +85,7 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  position: relative
 }
 
 /* =========================
@@ -143,42 +145,43 @@ a:active  { color: inherit; }
    NAVBAR
 ========================= */
 
+
+.layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(840px, 100% - 40px);
   z-index: 1000;
-  /* take it out of flex flow so it doesn't count toward hero height calc */
-  flex-shrink: 0;
 }
 
 .navbar-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  width: 95%;
-  margin: 0 auto;
-
   height: 64px;
   padding: 0 20px;
 
-  position: relative;
-  border-radius: 999px;
-
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.82),
-    rgba(255, 255, 255, 0.55)
+    rgba(255,255,255,0.82),
+    rgba(255,255,255,0.55)
   );
-
-  backdrop-filter: blur(32px) saturate(180%);
-  -webkit-backdrop-filter: blur(32px) saturate(180%);
-
+  backdrop-filter: blur(32px);
+  border-radius: 999px;
   box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.025),
-    0 0 0 1.5px rgba(0, 0, 0, 0.045),
-    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    0 4px 12px rgba(0,0,0,0.025),
+    0 0 0 1.5px rgba(0,0,0,0.045),
+    inset 0 1px 0 rgba(255,255,255,0.55);
 }
+
 
 .logo {
   display: flex;
@@ -271,7 +274,8 @@ a:active  { color: inherit; }
 
 .hero {
   flex: 1;
-  min-height: calc(100dvh - var(--navbar-h));
+min-height: 100dvh;
+   margin-top: -64px;
 
   display: flex;
   align-items: center;
