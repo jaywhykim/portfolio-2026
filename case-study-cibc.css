@@ -525,6 +525,33 @@ background: var(--grey);
   color: rgba(0,0,0,0.6);
 }
 
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.impact-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: var(--text-small);
+  line-height: var(--lh-normal);
+}
+
+.impact-dot {
+  width: 6px;
+  height: 6px;
+
+  margin-top: 8px;
+
+  border-radius: 50%;
+  background: var(--black);
+
+  flex-shrink: 0;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
