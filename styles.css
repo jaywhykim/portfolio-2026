@@ -51,6 +51,7 @@ body {
   --border-strong: rgba(39, 39, 39, 0.35);
   --border-white: rgb(247, 247, 251);
   --border-white-soft: rgba(255, 255, 255, 0.6);
+  --border-grey: rgba(39, 39, 39, 0.24);
 
   --bg-card: rgb(247, 247, 251);
   --bg-about: #e8e8e8;
@@ -60,6 +61,8 @@ body {
   --black-muted: rgba(11, 11, 15, 0.7);
   --black-faint: rgba(11, 11, 15, 0.4);
   --grey: rgb(242, 243, 245);
+
+  --text-grey: rgba(39, 39, 39, 0.45);
 
   --navbar-h: 82px; /* 64px bar + 18px sticky top offset */
 }

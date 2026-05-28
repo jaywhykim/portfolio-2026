@@ -97,7 +97,7 @@ min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  border: 1px solid rgba(39, 39, 39, 0.15);
+  border: 1.5px solid var(--border-grey);
   border-radius: 14px;
 
   overflow: hidden;
@@ -117,7 +117,7 @@ min-height: 100dvh;
 
 /* VERTICAL DIVIDERS */
 .meta-col:not(:last-child) {
-  border-right: 1px solid rgba(39, 39, 39, 0.12);
+  border-right: 1.5px solid var(--border-grey);
 }
 
 /* LABEL (SMALL CAPS STYLE) */
@@ -127,7 +127,7 @@ min-height: 100dvh;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  color: rgba(39, 39, 39, 0.55);
+  color: var(--black);
 }
 
 /* VALUE TEXT */
@@ -231,6 +231,18 @@ min-height: 100dvh;
   flex-direction: row;
   gap: 80px;
   align-items: stretch;
+  
+}
+
+.project-card--full {
+  background: var(--grey);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.project-card--full .project-content {
+  padding-top: 40px !important;
+  padding-left: 40px !important;
 }
 
 /* LEFT = TEXT */
@@ -551,6 +563,8 @@ background: var(--grey);
 
   flex-shrink: 0;
 }
+
+
 
 /* =========================
    RESPONSIVE
