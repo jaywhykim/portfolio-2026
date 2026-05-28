@@ -210,6 +210,10 @@ min-height: 100dvh;
   border-radius: 0;
 }
 
+.project-tile {
+  background: var(--grey);
+}
+
 .project-card--split {
   display: flex;
   flex-direction: row;
@@ -242,6 +246,13 @@ padding-bottom: 0;
     border-left: 2px solid var(--black-faint);
     border-right: 2px solid var(--black-faint);
 }
+
+ .image-frame .research-tile {
+  border-top: 0;
+    border-left: 2px solid var(--black-faint);
+    border-right: 2px solid var(--black-faint);
+}
+
 
 .project-card--split .image-frame--inverted {
   border-bottom: 2px solid var(--black-faint);
@@ -286,7 +297,6 @@ align-items: flex-start;
   align-items: center;
 
   width: clamp(180px, 35vw, 320px);
-  background: var(--grey);
   border-radius: var(--radius-lg);
   /* CRITICAL FIX: force square */
   height: auto;
@@ -294,6 +304,10 @@ align-items: flex-start;
 
   /* prevents flexbox distortion */
   align-self: center;
+}
+
+.project-tile--problem {
+  background: transparent;/
 }
 
 .project-tile .metric-label {
@@ -389,6 +403,86 @@ background: var(--grey);
   align-items: center;
 
   text-align: center;
+}
+
+.problem-tile {
+  background: transparent; /* or just delete the background */
+  padding: 0;
+}
+
+.meal-grid {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  padding: 0; /* 🔥 removes the inner whitespace */
+  margin: 0;
+
+  box-sizing: border-box;
+  align-content: stretch;
+}
+
+/* BASE TILES (white squares) */
+.meal {
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+   font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  line-height: var(--lh-normal);
+
+  color: rgba(0, 0, 0, 0.7);
+
+  background: #e6e6e6; /* solid grey fill */
+  border: none;        /* ❌ remove outline */
+}
+
+/* SOFT HIGHLIGHT (pastel orange layer) */
+.meal.soft-highlight {
+  background: #f7d2c4; /* pastel orange */
+  color: #7a3a1f;
+}
+
+/* MAIN HIGHLIGHT (darker orange) */
+.meal.highlight {
+  background: #f7d2c4; /* pastel orange */
+  color: #7a3a1f;
+ 
+  font-size: var(--text-h3);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-tight);
+
+}
+
+.meal .label {
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.research-tile {
+  width: 100%;
+  height: 100%;
+  background: var(--grey);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.research-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 /* =========================
    FINAL SECTION
