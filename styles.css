@@ -217,6 +217,10 @@ a:active  { color: inherit; }
   align-items: center;
 }
 
+a.button-primary:visited {
+  color: var(--bg-card);
+}
+
 /* =========================
    BUTTON SYSTEM
 ========================= */
