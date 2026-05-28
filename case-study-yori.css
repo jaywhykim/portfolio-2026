@@ -469,21 +469,7 @@ background: var(--grey);
   text-transform: uppercase;
 }
 
-.research-tile {
-  width: 100%;
-  height: 100%;
-  background: var(--grey);
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  padding: 20px;
-}
 
-.research-tile img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 /* =========================
    FINAL SECTION
 ========================= */

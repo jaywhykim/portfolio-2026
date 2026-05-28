@@ -527,6 +527,22 @@ min-height: 100dvh;
   border-color: var(--black);
 }
 
+.no-outline-tile {
+  width: 100%;
+  height: 100%;
+  background: var(--grey);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  padding: 0px;
+  border: 1px solid var(--black-faint); /* ✅ this is what you need */
+}
+.no-outline-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* =========================
    ABOUT
 ========================= */
