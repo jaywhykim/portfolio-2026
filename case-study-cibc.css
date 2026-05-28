@@ -156,6 +156,21 @@ min-height: 100dvh;
   .meta-col:last-child {
     border-bottom: none;
   }
+
+   .project-card--split {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-text h2 {
+    font-size: var(--text-h3);
+    line-height: var(--lh-tight);
+    width: 100%;
+  }
+
 }
 
 /* =========================
@@ -165,9 +180,8 @@ min-height: 100dvh;
 
 .case-intro {
   max-width: 1100px;
-  padding-top: 40px;
+  padding-top: 0;
   padding-bottom: 120px;
-  
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -191,6 +205,8 @@ min-height: 100dvh;
   max-width: 700px;
   margin: 0;
 }
+
+
 
 /* IMPORTANT: restore containment */
 .projects-section{
@@ -358,9 +374,18 @@ background: var(--grey);
 }
 
 .project-tile--problem {
-  aspect-ratio: 1 / 1;
-  border-radius: 50%; /* ✅ makes it a circle */
+  flex: 0 0 320px !important;
 
+  width: 320px !important;
+  height: 320px !important;
+
+  aspect-ratio: 1 / 1;
+
+  background: transparent !important;
+
+  border: 5px solid #6b1e2e;
+
+  border-radius: 50% !important;
 
   display: flex;
   flex-direction: column;
@@ -368,6 +393,40 @@ background: var(--grey);
   align-items: center;
 
   text-align: center;
+
+  padding: 32px;
+
+  box-sizing: border-box;
+
+  align-self: center;
+}
+
+.project-card--split .project-tile--problem {
+  background: transparent !important;
+  border-radius: 50% !important;
+}
+
+/* BIG NUMBER */
+.project-tile--problem .metric-value {
+  font-size: var(--text-h1);
+  font-weight: var(--weight-bold);
+  line-height: 1;
+
+  color: #6b1e2e;
+}
+
+/* LABEL */
+.project-tile--problem .metric-label {
+  margin-top: 12px;
+
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  line-height: var(--lh-normal);
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #6b1e2e;
 }
 
 .project-tile--problem .metric-value,
