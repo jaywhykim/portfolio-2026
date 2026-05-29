@@ -210,8 +210,10 @@ min-height: 100dvh;
 
 /* IMPORTANT: restore containment */
 .projects-section{
-  padding-top: 60px;
-  padding-bottom: 60px
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left:0;
+  padding-right:0;
 }
 .projects-grid {
   max-width: 1100px;
@@ -250,7 +252,10 @@ min-height: 100dvh;
   order: 1;
   flex: 1;
   min-width: 0;
-padding: 0px;
+padding-top: 20px;
+padding-left: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
   color: var(--black); /* ensure black text */
 }
 
@@ -307,9 +312,10 @@ align-items: flex-start;
 .project-card--split .project-tile {
   order: 2;
 
-  flex: 0 0 auto;   /* no stretching */
-
+   flex: 0 0 auto;
   display: flex;
+  align-items: flex-start;
+  
   justify-content: center;
   align-items: center;
 
@@ -392,10 +398,10 @@ background: var(--grey);
   height: 320px !important;
 
   aspect-ratio: 1 / 1;
+background: #f6c6d0 !important;
 
-  background: transparent !important;
 
-  border: 5px solid #6b1e2e;
+ 
 
   border-radius: 50% !important;
 
@@ -409,13 +415,14 @@ background: var(--grey);
   padding: 32px;
 
   box-sizing: border-box;
-
-  align-self: center;
+ 
 }
 
 .project-card--split .project-tile--problem {
-  background: transparent !important;
+
   border-radius: 50% !important;
+  align-self: flex-start;
+  
 }
 
 /* BIG NUMBER */
@@ -461,6 +468,97 @@ background: var(--grey);
 
   text-align: center;
 }
+
+/* =========================
+   RESEARCH STACK TILE
+========================= */
+
+.project-card--split .project-tile--research {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0;
+  align-self: flex-start;
+  
+}
+
+.project-tile--research {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;  /* IMPORTANT */
+  align-items: flex-start;     /* IMPORTANT */
+
+  padding: 0;
+}
+
+
+
+/* vertical stack container */
+.research-stack {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: stretch;
+
+  gap: 12px;
+
+  height: auto; /* CRITICAL */
+}
+
+.research-card {
+  width: 100%;
+  background: var(--grey);
+
+  border: none;              /* ❌ removes all outlines */
+  border-bottom: none;       /* extra safety */
+
+  border-radius: 16px;       /* rounded corners */
+
+  padding: 20px 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* remove last border */
+.research-card:last-child {
+  border-bottom: none;
+}
+
+/* title inside rectangle */
+.research-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--black);
+}
+
+/* jot note row */
+.impact-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: var(--text-small);
+  color: var(--black);
+}
+
+/* bullet dot */
+.impact-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--black);
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
 /* =========================
    FINAL SECTION
 ========================= */
