@@ -493,11 +493,8 @@ align-items: flex-start;
 
 /* BIG NUMBER */
 .project-tile--problem .metric-value {
-  font-size: var(--text-h1);
-  font-weight: var(--weight-bold);
-  line-height: 1;
-
-  color: #6b1e2e;
+   font-size: clamp(32px, 4vw, 56px) !important;
+  color: #6b1e2e !important;
 }
 
 /* LABEL */
@@ -511,7 +508,7 @@ align-items: flex-start;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  color: #6b1e2e;
+    color: #6b1e2e !important;
 }
 
 .project-tile--problem .metric-value,
@@ -661,7 +658,7 @@ align-items: flex-start;
   font-size:12px;
   padding: 10px 14px;
   border-radius: 999px;
-  border: 1px solid var(--border-light);
+ border: 1px solid #e7e7eb;
   background: #ffffff;
   color: var(--black-soft);
   white-space: nowrap;
@@ -670,6 +667,8 @@ align-items: flex-start;
 .arrow {
   font-size: 16px;
   color: var(--black-faint);
+    display: inline-block;
+
 }
 
 .pill--missing {
