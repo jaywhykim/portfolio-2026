@@ -62,7 +62,7 @@ body {
   --black-faint: rgba(11, 11, 15, 0.4);
   --grey: rgb(242, 243, 245);
 
-  --text-grey: rgba(39, 39, 39, 0.45);
+  --text-grey: rgba(39, 39, 39, 0.7);
 
   --navbar-h: 82px; /* 64px bar + 18px sticky top offset */
 }

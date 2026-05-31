@@ -233,7 +233,7 @@ min-height: 100dvh;
 .project-card--split {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 50px;
   align-items: stretch;
   
 }
@@ -416,18 +416,48 @@ align-items: flex-start;
 }
 
 .project-tile--problem {
-  flex: 0 0 320px !important;
-
-  width: 320px !important;
-  height: 320px !important;
-
+  position: relative;
+  width: 100%;
   aspect-ratio: 1 / 1;
-background: #f6c6d0 !important;
+  border-radius: 50%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- 
+.dial-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
-  border-radius: 50% !important;
+  transform: rotate(-90deg); /* START AT 12 O’CLOCK */
+}
+
+/* BACKGROUND RING (25% remaining) */
+.dial-bg {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 6;
+}
+
+/* PROGRESS (75% burgundy) */
+.dial-progress {
+  fill: none;
+  stroke: #6b1e2e;
+  stroke-width: 6;
+  stroke-linecap: round;
+
+  /* circle math */
+  stroke-dasharray: 326;
+  stroke-dashoffset: 81.5; /* 25% gap */
+
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.dial-content {
+  position: absolute;
+  inset: 0;
 
   display: flex;
   flex-direction: column;
@@ -436,17 +466,29 @@ background: #f6c6d0 !important;
 
   text-align: center;
 
-  padding: 32px;
-
-  box-sizing: border-box;
- 
+  z-index: 2;
+  pointer-events: none;
 }
 
+.metric-value {
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 700;
+  color: #6b1e2e;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #6b1e2e;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
 .project-card--split .project-tile--problem {
 
   border-radius: 50% !important;
   align-self: flex-start;
-  
+  background: transparent !important;
 }
 
 /* BIG NUMBER */
@@ -477,21 +519,7 @@ background: #f6c6d0 !important;
   color: #6b1e2e; /* burgundy */
 }
 
-.project-tile-circle {
-  aspect-ratio: 1 / 1;   /* keeps SAME size as square tiles */
-  width: 100%;           /* match layout system */
-  height: auto;          /* important for aspect-ratio */
 
-    background:#f2c9d1 !important;
-  border-radius: 50% !important;    /* makes it a circle */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-}
 
 .problem-block {
   margin-top: 8px;
@@ -511,7 +539,7 @@ background: #f6c6d0 !important;
   height: 6px;
   border-radius: 50%;
   background: var(--black);
-  margin-top: 8px;
+  margin-top: 12px;
   flex-shrink: 0;
 }
 
@@ -536,6 +564,7 @@ background: #f6c6d0 !important;
   border-radius: 0 !important;
   padding: 0;
   align-self: flex-start;
+  width: 100%;
   
 }
 
@@ -615,6 +644,73 @@ background: #f6c6d0 !important;
   background: var(--black);
   margin-top: 7px;
   flex-shrink: 0;
+}
+
+.impact-flow {
+  margin-top: 10px;
+}
+
+.flow-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.pill {
+  font-size:12px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: #ffffff;
+  color: var(--black-soft);
+  white-space: nowrap;
+}
+
+.arrow {
+  font-size: 16px;
+  color: var(--black-faint);
+}
+
+.pill--missing {
+  border: 1.5px dashed var(--border-strong);
+  background: transparent;
+  color: var(--black-faint);
+  font-weight: var( --weight-medium);
+  opacity: 1;
+}
+
+/* =========================
+   VOICE OF CUSTOMER QUOTE STYLE
+========================= */
+
+.vc-quote {
+  font-size: var(--text-small);
+  line-height: var(--lh-normal);
+
+  font-weight: 500; /* slightly thicker than body */
+
+  color: var(--text-grey);
+
+  display: inline-block;
+
+  position: relative;
+
+  padding-left: 14px; /* space for quote marker */
+}
+
+/* left quote indicator (subtle system accent) */
+.vc-quote::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  font-size: 24px;
+  line-height: 1;
+
+color: var(--text-grey);
+  opacity: 1;
 }
 
 /* =========================

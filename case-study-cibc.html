@@ -78,8 +78,8 @@ Transforming manual bank draft orders into a digital-first service
           <p class="project-metric">Problem</p>
 
           <h3 class="project-title">
-Manual request handling
-          </h3>
+Bank drafts can only be completed in-branch
+         </h3>
 
           <div class="problem-block">
 
@@ -100,11 +100,24 @@ Customers depend on teller interaction to complete bank draft requests, increasi
         </div>
       </div>
 
-      <div class="project-tile project-tile--problem">
-        <div class="metric-value">45m</div>
-        <div class="metric-label">Estimated service time</div>
-      </div>
+<div class="project-tile project-tile--problem">
 
+  <svg class="dial-svg" viewBox="0 0 120 120">
+
+    <!-- background ring (25% remainder grey) -->
+    <circle class="dial-bg" cx="60" cy="60" r="52"></circle>
+
+    <!-- progress ring (75% burgundy) -->
+    <circle class="dial-progress" cx="60" cy="60" r="52"></circle>
+
+  </svg>
+
+  <div class="dial-content">
+    <div class="metric-value">45m</div>
+    <div class="metric-label">Estimated service time </div>
+  </div>
+
+</div>
     </div>
 
   </div>
@@ -123,63 +136,72 @@ Customers depend on teller interaction to complete bank draft requests, increasi
           <p class="project-metric">Research</p>
 
           <h3 class="project-title">
-From insight to early prototype testing
-          </h3>
-<p class="project-description">
+Where the experience breaks down
+ </h3>
+<div class="problem-block">
 
-Collaborated with the user research team to analyze support call data and build a Figma prototype, then tested it in Maze, which revealed a disconnected system experience.  
-        </p>
+  <div class="problem-dot-line">
+    <span class="problem-dot"></span>
+    <p class="problem-text">
+Collaborated with the user research team to analyze support call data
+  </div>
+
+  <div class="problem-dot-line">
+    <span class="problem-dot"></span>
+    <p class="problem-text">
+Designed an early Figma prototype exploring a simplified online request flow
+  </div>
+
+  <div class="problem-dot-line">
+    <span class="problem-dot"></span>
+    <p class="problem-text">
+Conducted usability testing through Maze with 7 participants
+  </div>
+
+</div>
 </div>
       </div>
 
       <!-- RIGHT SIDE: RESEARCH TILE -->
-      <div class="project-tile project-tile--research">
+     <!-- RIGHT SIDE: RESEARCH TILE -->
+<div class="project-tile project-tile--research">
 
-        <div class="research-stack">
+  <div class="research-stack">
 
-          <div class="research-card">
-            <h4>Support call findings
+    <!-- CARD 2 -->
+ <div class="research-card">
+      <h4>Voice-of-customer feedback</h4>
 
-</h4>
-            <div class="impact-point">
-            
-              <span>
-                Long wait times led to rushed completion
-</span>
+    
+      <div class="impact-point ">
+        <span class="vc-quote">
+Do I just come back later to see if it’s ready, or will I get a notification when it’s done?
+      </div>
+    </div>
 
-            </div>
-<div class="impact-point">
-          <span>In-person guidance was needed to complete 
+    <!-- CARD 3 (NEW: FLOW ARTIFACT) -->
+    <div class="research-card">
+      <h4>Simplified online request flow</h4>
 
-              </span>
- </div>
-          </div>
+      <div class="impact-flow">
 
-         
-          <div class="research-card">
-            <h4>Prototype testing outcome
-
-
-
-</h4>
-            <div class="impact-point">
-              
-              <span>90% task completion rate
-
-              </span>
-            </div>
-
-            <div class="impact-point">
-              
-              <span>“Do I just come back later or will I get a notification?” - User Feedback
-
-              </span>
-            </div>
-          </div>
-
+        <div class="flow-row">
+          <span class="pill">Add request details</span>
+          <span class="arrow">→</span>
+          <span class="pill">Select pickup branch</span>
+          <span class="arrow">→</span>
+          <span class="pill">Confirm submission</span>
+          <span class="arrow">→</span>
+          <span class="pill pill--missing">Status tracking</span>
         </div>
 
       </div>
+    </div>
+   
+   
+
+  </div>
+</div>
 
     </div>
 
