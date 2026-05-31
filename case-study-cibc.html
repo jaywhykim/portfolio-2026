@@ -62,107 +62,54 @@ Transforming manual bank draft orders into a digital-first service
   <!-- =========================
        PROBLEM SECTION
   ========================== -->
-  <section class="projects-section">
+  <!-- =========================
+     PROBLEM SECTION (UPDATED)
+========================== -->
+<section class="projects-section">
 
+  <div class="projects-grid">
 
-   <!--  <div class="case-intro">
+    <div class="project-card project-card--split">
 
- <div class="case-meta">
-  <div class="meta-grid">
+      <div class="project-content">
 
-    <div class="meta-col">
-      <p class="meta-label">Context</p>
-      <p class="meta-value">Legacy enterprise system<br />
-Existing vendor environment
+        <div class="project-top">
 
-</p>
-    </div>
+          <p class="project-metric">Problem</p>
 
-    <div class="meta-col">
-      <p class="meta-label">Scope</p>
-      <p class="meta-value">End-to-end workflow<br />
-        Cross-system experience<br />
-        Multi-step service flow
+          <h3 class="project-title">
+Manual request handling
+          </h3>
 
+          <div class="problem-block">
 
-
-
-
-      </p>
-    </div>
-
-    <div class="meta-col">
-      <p class="meta-label">Team</p>
-      <p class="meta-value">
-        Product Manager<br />
-        User Research<br />
-        Engineering
-      </p>
-    </div>
-
-  </div>
-</div>
-
-</div>-->
-    <div class="projects-grid">
-      
-      <div class="project-card project-card--split">
-
-        <div class="project-content">
-
-          <div class="project-top">
-
-            <p class="project-metric">Problem</p>
-
-            <h3 class="project-title">
-             Bank draft requests require in-branch issuance
-            </h3>
-
-            <p class="project-description">
-Customers arrived without context and completed requests within a queue where staff guided verification and issuance.            </p>
-
-            <div class="impact-stack">
-              <div class="impact-item">
-                <div class="impact-label">Constraints</div>
-                <div class="impact-value impact-list">
-  <div class="impact-value impact-list">
-
-  <div class="impact-point">
-    <span class="impact-dot"></span>
-    <span>
-      
-    Bank drafts still required in branch pickup
-    </span>
+  <div class="problem-dot-line">
+    <span class="problem-dot"></span>
+    <p class="problem-text">
+Tellers handle all bank draft requests in branch, increasing service time and operational load    </p>
   </div>
 
-  <div class="impact-point">
-    <span class="impact-dot"></span>
-    <span>
-      
-    Work within existing vendor component ecosystem
+  <div class="problem-dot-line">
+    <span class="problem-dot"></span>
+    <p class="problem-text">
+Customers depend on teller interaction to complete bank draft requests, increasing wait times during their visit    </p>
   </div>
 
-
-
 </div>
-</div>
-              </div>
-            </div>
 
-          </div>
         </div>
+      </div>
 
       <div class="project-tile project-tile--problem">
-       
-  <div class="metric-value">45m</div>
-  <div class="metric-label">
-Estimated service time </div>
-</div>
-
+        <div class="metric-value">45m</div>
+        <div class="metric-label">Estimated service time</div>
       </div>
 
     </div>
-  </section> 
+
+  </div>
+
+</section>
 <section class="projects-section">
   <div class="projects-grid">
 
@@ -176,12 +123,13 @@ Estimated service time </div>
           <p class="project-metric">Research</p>
 
           <h3 class="project-title">
-          Friction at initiation
+From insight to early prototype testing
           </h3>
+<p class="project-description">
 
-          <p class="project-description">
-Worked with user research to ground the problem in feedback and support calls, ensuring design direction reflected real in-branch friction.
-        </div>
+Collaborated with the user research team to analyze support call data and build a Figma prototype, then tested it in Maze, which revealed a disconnected system experience.  
+        </p>
+</div>
       </div>
 
       <!-- RIGHT SIDE: RESEARCH TILE -->
@@ -190,35 +138,40 @@ Worked with user research to ground the problem in feedback and support calls, e
         <div class="research-stack">
 
           <div class="research-card">
-            <h4>Long branch wait times
+            <h4>Support call findings
 
 </h4>
             <div class="impact-point">
             
-              <span>Customers experienced delays during in-branch visits
+              <span>
+                Long wait times led to rushed completion
 </span>
+
             </div>
+<div class="impact-point">
+          <span>In-person guidance was needed to complete 
+
+              </span>
+ </div>
           </div>
 
+         
           <div class="research-card">
-            <h4>Pressure to rush transactions
+            <h4>Prototype testing outcome
 
-
-</h4>
-            <div class="impact-point">
-            
-              <span>Queues created urgency that led to rushed completion</span>
-            </div>
-          </div>
-
-          <div class="research-card">
-            <h4>Unclear requirements for bank drafts
 
 
 </h4>
             <div class="impact-point">
               
-              <span>Users were unsure what was needed to complete the request
+              <span>90% task completion rate
+
+              </span>
+            </div>
+
+            <div class="impact-point">
+              
+              <span>“Do I just come back later or will I get a notification?” - User Feedback
 
               </span>
             </div>
@@ -248,10 +201,10 @@ Worked with user research to ground the problem in feedback and support calls, e
             <p class="project-metric">Solution</p>
 
             <h3 class="project-title">
-Integrated bank draft tracking into existing Status Hub            </h3>
+Leveraging service request centre       </h3>
 
             <p class="project-description">
-We extended the existing Status Hub to support bank draft request tracking, enabling users to monitor progress within a familiar system.         </p>
+The key decision was to integrate with the existing service request system to improve efficiency and avoid building separate notification features.
 
           </div>
 

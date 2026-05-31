@@ -1,6 +1,8 @@
 /* =========================
    CONTAINER (GLOBAL FIX)
 ========================= */
+
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -256,7 +258,7 @@ padding-top: 20px;
 padding-left: 0px;
 padding-right: 0px;
 padding-bottom: 0px;
-  color: var(--black); /* ensure black text */
+  color: var(--black)!important; /* ensure black text */
 }
 
 .project-card--split .project-image {
@@ -357,38 +359,60 @@ align-items: flex-start;
 .project-card--split .project-tile {
   flex: 1;
 }
+/* =========================
+   IMPACT / WHY IT MATTERS TILE (GREY CARD)
+========================= */
 
-.project-card--split .impact-stack {
-  padding-top: 24px;
+.impact-stack {
+  margin-top: 20px;
+  padding: 18px 20px;
 
-}
+  background: var(--grey); /* your system grey */
+  border-radius: 16px;
 
-.project-card--split .impact-item {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-
-  padding: 16px 18px;
-background: var(--grey);
-  border-radius: 14px;
-
+  gap: 12px;
 }
 
-.project-card--split .impact-label {
+/* label inside grey tile */
+.impact-label {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  color: rgba(0, 0, 0, 0.55);
+  color: var(--black); /* IMPORTANT: force black */
+  opacity: 0.7;
 }
 
-.project-card--split .impact-value {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.4;
+/* list container */
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  color: var(--black);
+/* each bullet row */
+.impact-point {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+
+  font-size: var(--text-small);
+  line-height: var(--lh-normal);
+
+  color: var(--black); /* IMPORTANT */
+}
+
+/* bullet dot */
+.impact-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--black);
+  margin-top: 7px;
+  flex-shrink: 0;
 }
 
 .project-tile--problem {
@@ -469,9 +493,43 @@ background: #f6c6d0 !important;
   text-align: center;
 }
 
-/* =========================
-   RESEARCH STACK TILE
-========================= */
+.problem-block {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problem-dot-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.problem-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--black);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.problem-text {
+  font-size: var(--text-p);
+  line-height: var(--lh-normal);
+  color: var(--black);
+  margin: 0;
+}
+
+.project-card--split .problem-text {
+  color: var(--black) !important;
+}
+
+.project-card--split .problem-dot-line {
+  color: var(--black) !important;
+}
+
 
 .project-card--split .project-tile--research {
   background: transparent !important;
