@@ -325,7 +325,7 @@ align-items: flex-start;
   align-items: center;
 
   width: clamp(180px, 35vw, 320px);
-  background:transparent;
+  background:transparent !important;
   border-radius: var(--radius-lg);
   /* CRITICAL FIX: force square */
   height: auto;
