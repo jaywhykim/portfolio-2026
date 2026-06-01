@@ -325,7 +325,7 @@ align-items: flex-start;
   align-items: center;
 
   width: clamp(180px, 35vw, 320px);
-  background: var(--grey);
+  background:transparent;
   border-radius: var(--radius-lg);
   /* CRITICAL FIX: force square */
   height: auto;
@@ -719,6 +719,41 @@ color: var(--burgundy);
   opacity: 1;
 }
 
+.comparison-card {
+  background: var(--grey);
+  border-radius: 16px;
+  padding: 16px 18px;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.comparison-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.comparison-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.comparison-text {
+  font-size: var(--text-small);
+  line-height: var(--lh-normal);
+  color: var(--black);
+}
+
+/* spacing between BEFORE and AFTER */
+.comparison-spacer {
+  height: 18px;
+}
+
 /* =========================
    FINAL SECTION
 ========================= */
@@ -826,12 +861,16 @@ color: var(--burgundy);
   margin-top: auto;
 }
 
+.project-card--split .project-bottom {
+  margin-top: auto;
+}
+
 .project-card--split .tradeoff {
+  margin-top: 16px;
+  padding-top: 12px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding-top: 12px;
-
+  gap: 4px;
 }
 
 .project-card--split .tradeoff-label {
@@ -839,14 +878,13 @@ color: var(--burgundy);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--black) !important;
+  color: #111 !important;
 }
 
 .project-card--split .tradeoff-text {
   font-size: var(--text-small);
-  color: var(--black) !important;
+  color: #111 !important;
 }
-
 /* =========================
    RESPONSIVE
 ========================= */
