@@ -679,9 +679,9 @@ align-items: flex-start;
 }
 
 .pill--missing {
-  border: 1.5px dashed var(--burgundy);
+  border: 1.5px dashed var(--burgundy)!important;
   background: transparent;
-  color: var(--burgundy);
+  color: var(--burgundy) !important;
   font-weight: var( --weight-medium);
   opacity: 1;
 }
@@ -826,23 +826,25 @@ color: var(--burgundy);
   margin-top: auto;
 }
 
-.tradeoff {
+.project-card--split .tradeoff {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  padding-top: 12px;
+
 }
 
-.tradeoff-label {
+.project-card--split .tradeoff-label {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--black) !important;
 }
 
-.tradeoff-text {
+.project-card--split .tradeoff-text {
   font-size: var(--text-small);
-  color: var(--black);
+  color: var(--black) !important;
 }
 
 /* =========================
