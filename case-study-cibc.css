@@ -925,7 +925,7 @@ color: var(--burgundy);
 }
 
 /* EXPLANATION */
-.outcome-description {
+.project-card--split .outcome-description {
   font-size: var(--text-p);
   line-height: var(--lh-normal);
   color: var(--black-muted);
