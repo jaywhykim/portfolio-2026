@@ -930,8 +930,8 @@ color: var(--burgundy);
   line-height: var(--lh-normal);
   color: var(--black-muted);
   max-width: 65%;
-   text-transform: uppercase;
-  letter-spacing: 0.08em;
+   text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
 }
 
 /* DIVIDER */
