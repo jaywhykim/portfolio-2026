@@ -925,12 +925,17 @@ color: var(--burgundy);
 }
 
 /* EXPLANATION */
-.project-card--split .outcome-description {
+ .outcome-description {
   font-size: var(--text-p);
   line-height: var(--lh-normal);
   color: var(--black-muted);
   max-width: 65%;
    text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+}
+
+.project-card--split .outcome-card .outcome-description {
+  text-transform: uppercase !important;
   letter-spacing: 0.08em !important;
 }
 
