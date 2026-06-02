@@ -885,6 +885,83 @@ color: var(--burgundy);
   font-size: var(--text-small);
   color: #111 !important;
 }
+
+/* =========================
+   OUTCOME HERO CARD
+========================= */
+
+.outcome-card {
+  width: min(900px, 100%);
+  margin: 0 auto;
+
+  background: var(--grey);
+  border-radius: 24px;
+
+  padding: 72px 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: 18px;
+}
+
+/* BIG NUMBER */
+.outcome-metric {
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1;
+}
+
+/* SUPPORT LINE */
+.outcome-subtitle {
+  font-size: var(--text-p);
+  font-weight: 500;
+  color: var(--black);
+  opacity: 0.85;
+  max-width: 60%;
+}
+
+/* EXPLANATION */
+.outcome-description {
+  font-size: var(--text-small);
+  line-height: var(--lh-normal);
+  color: var(--black-muted);
+  max-width: 65%;
+}
+
+/* DIVIDER */
+.outcome-divider {
+  width: 60%;
+  height: 1px;
+  background: rgba(0,0,0,0.12);
+  margin: 12px 0;
+}
+
+/* LIST */
+.outcome-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  align-items: flex-start; /* IMPORTANT: left align inside centered card */
+  width: 60%;
+}
+
+/* ITEM */
+.outcome-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: var(--text-small);
+  color: var(--black);
+  text-align: left;
+}
+
+/* reuse your dot system */
 /* =========================
    RESPONSIVE
 ========================= */

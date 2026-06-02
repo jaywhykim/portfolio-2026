@@ -539,7 +539,7 @@ min-height: 100dvh;
   overflow: hidden;
   border-radius: var(--radius-lg);
   padding: 0px;
-  border: 1px solid var(--black-faint); /* ✅ this is what you need */
+  border: 2px solid var(--black-faint); /* ✅ this is what you need */
 }
 .no-outline-tile img {
   width: 100%;
