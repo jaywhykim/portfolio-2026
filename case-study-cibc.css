@@ -926,10 +926,12 @@ color: var(--burgundy);
 
 /* EXPLANATION */
 .outcome-description {
-  font-size: var(--text-small);
+  font-size: var(--text-p);
   line-height: var(--lh-normal);
   color: var(--black-muted);
   max-width: 65%;
+   text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 /* DIVIDER */
