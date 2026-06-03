@@ -704,7 +704,7 @@ align-items: flex-start;
 
   font-weight: 500; /* slightly thicker than body */
 
-  color: var(--burgundy);
+  color: var(--text-grey);
 
   display: inline-block;
 
@@ -723,7 +723,7 @@ align-items: flex-start;
   font-size: 32px;
   line-height: 1;
 
-color: var(--burgundy);
+color: var(--text-grey);
   opacity: 1;
 }
 
@@ -734,7 +734,7 @@ color: var(--burgundy);
 
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .comparison-block {
