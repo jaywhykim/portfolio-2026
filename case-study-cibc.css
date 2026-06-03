@@ -704,7 +704,7 @@ align-items: flex-start;
 
   font-weight: 500; /* slightly thicker than body */
 
-  color: var(--text-grey);
+  color: var(--text-grey)!important;
 
   display: inline-block;
 
@@ -723,7 +723,7 @@ align-items: flex-start;
   font-size: 32px;
   line-height: 1;
 
-color: var(--text-grey);
+color: var(--text-grey)!important;
   opacity: 1;
 }
 
