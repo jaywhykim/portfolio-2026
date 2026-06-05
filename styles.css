@@ -726,10 +726,7 @@ min-height: 100dvh;
     --navbar-h: 78px;
   }
 
-  .container {
-    padding: 0 20px;
-    /* keep flex column so hero centering still works on mobile */
-  }
+  
 
   .logo {
     justify-self: start;
