@@ -592,7 +592,7 @@ min-height: 100dvh;
 }
 
 .about-copy {
-  max-width: 770px;
+  max-width: 100%;
   align-items: center;
   justify-content: center;
 }
