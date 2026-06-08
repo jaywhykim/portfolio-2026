@@ -887,7 +887,10 @@ display: flex;
   .project-title {
     width: 90%;
   }
+
 }
+
+
 
 /* =========================
    EXTRA SMALL  ≤ 400px
@@ -950,6 +953,10 @@ display: flex;
   .contact-group {
     flex-direction: row;
     gap: clamp(60px, 4vw, 80px);
+  }
+
+  .about-card {
+    padding: 54px 8px 72px;
   }
 }
 
