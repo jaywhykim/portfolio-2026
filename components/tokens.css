@@ -1,0 +1,87 @@
+:root {
+
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --black: rgb(39,39,39);
+  --grey-dark: rgba(39, 39, 39, 0.7);
+  --grey: rgba(11, 11, 15, 0.4);
+  --grey-light: rgb(242, 243, 242); 
+  --white: rgb(254, 252, 254);
+  --white-grey: rgba(255, 255, 255, 0.6);
+
+  --gradient-burgundy:linear-gradient(
+    120deg,
+    #341726 0%,
+    #4d1a32 22%,
+    #68203f 45%,
+    #86244a 72%,
+    #a92c4f 100%
+  );
+
+  --gradient-orange: linear-gradient(
+    120deg,
+    #d8734e 0%,
+    #e07a5f 22%,
+    #e98b70 45%,
+    #f39c81 72%,
+    #fba593 100%
+  );
+
+  --gradient-blue: linear-gradient(
+    120deg,
+    #a8d6ff 0%,
+    #bfe3ff 35%,
+    #d6ecff 70%,
+    #eaf6ff 100%
+  );
+
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
+
+  --text-primary: var(--black);
+  --text-secondary: var(--grey-dark);
+  --text-inverse: var(--white);
+  
+  --text-h1: clamp(40px, 4vw, 64px);
+  --text-h2: clamp(28px, 3vw, 40px);
+  --text-h3: clamp(22px, 2.2vw, 30px);
+  --text-lead: clamp(18px, 1.6vw, 22px);
+  --text-p: clamp(16px, 1.2vw, 18px);
+  --text-small: 14px;
+  --text-xsmall: 11px;
+ 
+  --lh-tight: 1.1;
+  --lh-normal: 1.6;
+
+  --bg-primary: var(--white);
+  --bg-surface: var(--grey-light);
+
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+
+  --border-light: var(--grey-light);
+  --border-medium:var(--grey);
+  --border-strong: var(--black);
+  --border-inverse: var(--white-grey);
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  --section-y: clamp(64px, 8vw, 120px);
+  --container: 1100px;
+
+
+}

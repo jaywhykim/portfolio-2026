@@ -1,0 +1,32 @@
+.device-frame {
+  width: 100%;
+  max-width: 272px;
+
+  position: relative;
+  box-sizing: border-box;
+
+  padding: var(--space-8);
+  padding-bottom: 0;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+
+  border-top: var(--border-width-2) solid var(--border-inverse);
+  border-left: var(--border-width-2) solid var(--border-inverse);
+  border-right: var(--border-width-2) solid var(--border-inverse);
+}
+
+.device-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.device-frame--inverse {
+  border-top-color: var(--border-medium);
+  border-left-color: var(--border-medium);
+  border-right-color: var(--border-medium);
+}

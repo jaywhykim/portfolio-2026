@@ -1,0 +1,127 @@
+/* =========================
+   PROJECT CARD BASE
+========================= */
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-48);
+
+  width: 100%;
+  height: 420px;
+
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+
+  position: relative;
+}
+
+/* inverse layout */
+.project-card--inverse {
+  flex-direction: row-reverse;
+}
+
+/* gradients */
+.project-card--1 {
+  background: var(--gradient-burgundy);
+  color: var(--white);
+}
+
+.project-card--2 {
+  background: var(--gradient-orange);
+}
+
+.project-card--3 {
+  background: var(--gradient-blue);
+}
+
+.project-card--1 .button--icon {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.project-card--1 .button--icon i {
+  color: inherit;
+}
+
+/* =========================
+   LEFT CONTENT COLUMN
+========================= */
+
+.project-content {
+  width: 50%;
+  padding: var(--space-40);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+align-items: (flex-start);
+  color: var(--text-inverse);
+}
+
+/* stack spacing already handled */
+.text-stack-trio {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================
+   RIGHT MEDIA COLUMN
+========================= */
+
+.project-media {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: var(--space-24);
+}
+
+.project-media .device-frame {
+  max-width: 280px;
+  width: 100%;
+}
+
+.project-card--1 .project-label,
+.project-card--1 .project-title,
+.project-card--1 .project-metric,
+.project-card--1 p,
+.project-card--1 h1,
+.project-card--1 h2,
+.project-card--1 h3 {
+  color: var(--white);
+}
+
+
+
+/* =========================
+   MOBILE STACK
+========================= */
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-content,
+  .project-media {
+    width: 100%;
+  }
+
+  .project-content {
+    padding: var(--space-32);
+    gap: var(--space-24);
+  }
+
+  .project-media {
+    padding: var(--space-24);
+  }
+}

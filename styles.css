@@ -820,9 +820,7 @@ min-height: 100dvh;
     border-radius: var(--radius-md);
   }
 
-  .about-copy {
-    max-width: 600px;
-  }
+  
 
   .about-text.lead {
     font-size: var(--text-lead);
