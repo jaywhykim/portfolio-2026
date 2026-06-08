@@ -606,7 +606,7 @@ min-height: 100dvh;
   font-weight: var(--weight-medium);
   line-height: var(--lh-normal);
   max-width: 100%;
-  justify-self: center;
+  
 }
 
 .about-card .button {
