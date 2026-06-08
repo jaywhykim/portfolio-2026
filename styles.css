@@ -593,6 +593,8 @@ min-height: 100dvh;
 
 .about-copy {
   max-width: 770px;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-text {
@@ -606,6 +608,7 @@ min-height: 100dvh;
   font-weight: var(--weight-medium);
   line-height: var(--lh-normal);
   max-width: 100%;
+  justify-content: center;
   
 }
 
@@ -824,6 +827,8 @@ min-height: 100dvh;
 
   .about-text.lead {
     font-size: var(--text-lead);
+    align-items: center;
+    justify-content: center;
   }
 
   /* --- contact --- */
