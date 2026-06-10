@@ -450,6 +450,13 @@ min-height: 100dvh;
   box-sizing: border-box;
 }
 
+.project-card--3 .image-frame {
+  border-top: 2px solid var(--black-faint);
+  border-left: 2px solid var(--black-faint);
+  border-right: 2px solid var(--black-faint);
+}
+
+
 .image-frame img {
   width: 100%;
   height: 100%;
@@ -818,7 +825,7 @@ display: flex;
   }
 
   .project-card--3 .project-image img {
-    width: 60%;
+    width: 100%;
     object-fit: cover;
   }
 
